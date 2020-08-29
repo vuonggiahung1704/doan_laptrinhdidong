@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Danh sách hóa đơn:"
+            android:background="#03A9F4"
+            android:textColor="#FBF9F9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ListView
+            android:layout_marginTop="5dp"
+            android:id="@+id/listViewHD"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"/>
+
+        <TextView
+            android:background="#03A9F4"
+            android:textColor="#FBF9F9"
+            android:text="Tìm hóa đơn:"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnLoc"
+                android:background="#03A9F4"
+                android:textColor="#FBF9F9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lọc theo ngày" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtTim"
+                android:hint="Nhập mã hóa đơn cần tìm"
+                android:layout_width="300dp"
+                android:layout_height="40dp"/>
+
+            <Button
+                android:id="@+id/btnTim"
+                android:background="#03A9F4"
+                android:textColor="#FBF9F9"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tìm" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnQuayLai"
+            android:background="#03A9F4"
+            android:textColor="#FBF9F9"
+            android:layout_marginTop="20dp"
+            android:text="QuayLai"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

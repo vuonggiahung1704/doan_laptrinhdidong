@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/img"
+        android:src="@drawable/user_row"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/TenDangNhap"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/img"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tên đăng nhập"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/quyen"
+        android:layout_toRightOf="@id/TenDangNhap"
+        android:text="Nhân viên"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/MatKhau"
+        android:layout_below="@id/TenDangNhap"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/img"
+        android:text="Tên đăng nhập"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/HoTen"
+        android:layout_below="@id/MatKhau"
+        android:layout_marginLeft="60dp"
+        android:text="Tên đăng nhập"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

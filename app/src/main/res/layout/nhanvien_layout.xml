@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Danh sách nhân viên:"
+            android:background="#03A9F4"
+            android:layout_marginTop="5dp"
+            android:textColor="#FBF9F9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:hint="Nhập nhân viên"
+                android:id="@+id/edtTimNV"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnTimNV"
+                android:layout_marginLeft="5dp"
+                android:text="Tìm"
+                android:textSize="10dp"
+                android:background="#03A9F4"
+                android:textColor="#FBF9F9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_marginTop="5dp"
+            android:id="@+id/listViewNV"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"/>
+
+        <TextView
+            android:text="Thông tin tài khoản:"
+            android:background="#03A9F4"
+            android:textColor="#FBF9F9"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="290dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Tên đăng nhập:"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/edtTenDN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Mật khẩu:"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/edtMatKhau"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Tên nhân viên:"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/edtHoTen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Quyền đăng nhập:"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/spinnerQuyen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <Button
+                    android:id="@+id/btnThem"
+                    android:background="#03A9F4"
+                    android:textColor="#FBF9F9"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="10dp"
+                    android:text="Thêm" />
+
+                <Button
+                    android:id="@+id/btnCapNhat"
+                    android:background="#03A9F4"
+                    android:textColor="#FBF9F9"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="10dp"
+                    android:text="Cập nhật" />
+
+                <Button
+                    android:id="@+id/btnXoa"
+                    android:background="#03A9F4"
+                    android:textColor="#FBF9F9"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="10dp"
+                    android:text="Xóa" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnQuayLai"
+                android:background="#03A9F4"
+                android:textColor="#FBF9F9"
+                android:layout_marginTop="10dp"
+                android:text="Quay lại"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
